@@ -14,10 +14,15 @@
 </head>
 
 <body>
-    <audio style="display: none;" controls loop autoplay>
-        <source src="assets/music/thousandyears.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+   <audio id="myAudio" controls>
+    <source src="/assets/music/18.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    var audio = document.getElementById('myAudio');
+    audio.play();  // Menggunakan fungsi play() untuk memulai pemutaran audio
+</script>
     <div class="cake">
         <div class="plate"></div>
         <div class="layer layer-bottom"></div>
