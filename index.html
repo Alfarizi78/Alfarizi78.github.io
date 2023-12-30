@@ -11,29 +11,13 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>HBD Meowww</title>
-    
 </head>
 
 <body>
-   <audio id="myAudio" controls style="display: none;">
-    <source src="/assets/music/18.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
-<button id="playButton" style="background: none; border: none; cursor: pointer;">
-    <i class="fas fa-play" style="font-size: 24px; color: #333;"></i>
-</button>
-<script>
-    var audio = document.getElementById('myAudio');
-    var playButton = document.getElementById('playButton');
-
-    playButton.addEventListener('click', function() {
-        var userConfirmed = confirm('Apakah Anda ingin memulai pemutaran audio?');
-
-        if (userConfirmed) {
-            audio.play();
-        }
-    });
-</script>
+    <audio style="display: none;" controls loop autoplay>
+        <source src="/assets/music/18.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="cake">
         <div class="plate"></div>
         <div class="layer layer-bottom"></div>
